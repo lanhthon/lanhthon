@@ -1,6 +1,6 @@
 var nhacnen = document.getElementById("myAudio"); 
-nhacnen.play();
-var name = document.getElementById("name").value
+
+var name = document.getElementById("name").value;
 
 
   
@@ -53,7 +53,7 @@ document.getElementById("quote").innerHTML = loibaihat[luot++];
 
 function thongbaopopup(){
  
-   
+   nhacnen.play();
 document.getElementById("tbpopup-1").classList.toggle("active");
 }
 
