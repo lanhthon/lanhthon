@@ -1,0 +1,340 @@
+@media (orientation: landscape) {
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+img {
+  display: block;
+  width: 80px;
+  height:80px;
+}
+@keyframes fadeIn {
+	0% { opacity: -10; }
+	100% { opacity: 1; }
+}
+
+#lol {
+    	animation: myfirst 5s 2;
+  animation-direction: alternate;
+}
+
+@keyframes myfirst {
+  0%   {background: red; left: 0px; top: 0px;}
+  25%  {background: yellow; left: 200px; top: 0px;}
+  50%  {background: blue; left: 200px; top: 200px;}
+  75%  {background: green; left: 0px; top: 200px;}
+  100% {background: red; left: 0px; top: 0px;}
+}
+
+
+#myVideo {
+position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: 65%;
+  height: 65%;
+}
+.outer {
+  background-color: pink;
+  background-size:auto;
+  width: 100px;
+  position: relative;
+  display: inline-block;
+  margin: 100px 20px;
+
+}
+
+.inner {
+  font-size: 20px;
+  font-color: #878787;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: #DDD;
+
+}
+
+.rotate {
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  transform:  translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+#anh {
+    top:0;
+    position: fixed;
+    
+}
+
+#nen {
+   width: 100%;
+   height: cover;
+  padding: 20px;
+
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  
+  
+
+	
+}
+#nen1 {
+font-size:15px;
+  padding: 20px;
+height:120px;
+
+  background-color: rgba(256, 256, 256, 0.1);
+  
+  
+color: #A98B8D;
+
+}
+
+
+
+.chuyendong {
+    
+  position: fixed;
+  bottom: 0;
+  background: rgba(192, 192, 192, 0);
+  
+  width: 100%;
+  padding: 20px;
+
+color: #FFF;
+text-shadow: 0 0 150px #FFF, 0 0 60px #FFF, 0 0 10px #FFF;
+animation-name:move_right;
+            animation-duration:40s;
+            animation-iteration-count:1;
+        }
+        @keyframes move_right{
+            0%{bottom:0px;}
+           100%{bottom:500px;}
+    
+    
+}
+
+
+ body {
+ 	
+  color:#fff;
+ background-color:#E1DFE2;
+background-repeat:no-repeat;
+ background-size:cover; 
+
+}
+
+h5,h4 {
+
+font-size:13px;
+}
+    
+a {
+ color: #78BCC4;
+ font-size:13px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900');
+
+:root {
+  --text-color: hsla(210, 50%, 85%, 1);
+  --shadow-color: hsla(210, 40%, 52%, .4);
+  --btn-color: hsl(210, 80%, 42%);
+  --bg-color: #141218;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+button {
+  position:relative;
+  padding: 10px 20px;  
+  border: none;
+  background: none;
+  cursor: pointer;
+  
+  font-family: "Source Code Pro";
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 15px;  
+  color: var(--text-color);
+  
+  background-color: var(--btn-color);
+  box-shadow: var(--shadow-color) 2px 2px 22px;
+  border-radius: 4px; 
+  z-index: 0;  
+  overflow: hidden;   
+}
+
+button:focus {
+  outline-color: transparent;
+  box-shadow: var(--btn-color) 2px 2px 22px;
+}
+
+.right::after, button::after {
+  content: var(--content);
+  display: block;
+  position: absolute;
+  white-space: nowrap;
+  padding: 40px 40px;
+  pointer-events:none;
+}
+
+button::after{
+  font-weight: 200;
+  top: -30px;
+  left: -20px;
+} 
+
+input[type=text] {
+  width: auto;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #58257b;
+  outline: none;
+  background-color: rgba(255,255,255,0.5);
+}
+
+input[type=text]:focus {
+  background-color: #CCFFCC;
+}
+input[type=submit] {
+  width: auto;
+  background-color: #3366CC;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+#tinnhan {
+    display:none;
+    position: fixed;
+  bottom: 100px;
+  
+    text-align: right;
+  background: rgba(255, 255, 255, 0.1);
+  
+  width: 100%;
+  padding: 20px;
+
+color: #FFF;
+text-shadow: 0 0 150px #FFF, 0 0 60px #FFF, 0 0 10px #FFF;
+	-webkit-animation: fadeIn 10s ease-out;
+	animation: fadeIn 10s ease-out;
+}
+
+/* Thong bao Popup  */
+.tbpopup .tboverlay {
+position:fixed;
+top:0px;
+left:0px;
+width:100vw;
+height:100vh;
+background:rgba(0,0,0,0.7);
+z-index:5;
+display:none;
+}
+
+.tbpopup .tbcontent {
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%) scale(0);
+background:#fff;
+max-width:500px;
+z-index:6;
+text-align:center;
+padding:20px;
+box-sizing:border-box;
+font-family:"Open Sans",sans-serif;
+border-radius:20px;
+display: block;
+position: fixed;
+box-shadow:0px 0px 10px #111;
+}
+@media (max-width: 700px) {
+.tbpopup .tbcontent {width:90%;}
+}
+
+.tbpopup .tbclose-btn {
+cursor:pointer;
+position:absolute;
+right:20px;
+top:20px;
+width:35px;
+height:35px;
+color:#ff4444;
+font-size:30px;
+font-weight:600;
+line-height:35px;
+text-align:center;
+border-radius:50%;
+}
+
+.tbpopup.active .tboverlay {
+display:block;
+}
+
+.tbpopup.active .tbcontent {
+transition:all 300ms ease-in-out;
+transform:translate(-50%,-50%) scale(1);
+}
+.tbbuttom{background:#00cc00;color:#fff}
+
+
+
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+#chatbox {
+    text-align:left;
+    margin:0 auto;
+    margin-bottom:25px;
+    padding:10px;
+    background:#fff;
+    height:270px;
+    width:430px;
+    border:1px solid #ACD8F0;
+    overflow:auto; }
+  
+#usermsg {
+    width:395px;
+    border:1px solid #ACD8F0; }
+  
+#submit { width: 60px; }
+  
+.error { color: #ff0000; }
+  
+#menu { padding:12.5px 25px 12.5px 25px; }
+  
+.welcome { float:left; }
+  
+.logout { float:right; }
+  
+.msgln { margin:0 0 2px 0; }
