@@ -1,29 +1,13 @@
 var nhacnen = document.getElementById("myAudio"); 
 nhacnen.play();
-function readTextFile(file, callback) {
-    var rawFile = new XMLHttpRequest();
-    rawFile.overrideMimeType("application/json");
-    rawFile.open("GET", file, true);
-    rawFile.onreadystatechange = function () {
-        if (rawFile.readyState === 4 && rawFile.status == "200") {
-            callback(rawFile.responseText);
-        }
-    }
-    rawFile.send(null);
-}
+var name = document.getElementById("name").value
 
-// Chạy thử
-readTextFile(" name2.json", function (text) {
-    var data = JSON.parse(text);
-    
-
-var name = data.ten;
 
   
-if(name.indexOf("ên")>0||name.indexOf("en")>0){
+
   
   
-};
+
 
 
 var loibaihat = ["<b>Far From You<br>Song by Arild Aas, Martin, Miller and WildVibes","When you feel you're missing out<br><b>Có khi nào "+name+" cảm thấy thật thiếu vắng",
@@ -60,7 +44,7 @@ setTimeout(function (){
 document.getElementById("quote").innerHTML = loibaihat[luot++];
 },gio[i++]); 
 };
-});
+
 
 
   
